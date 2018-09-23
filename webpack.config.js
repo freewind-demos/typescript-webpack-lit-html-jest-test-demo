@@ -2,8 +2,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     mode: 'development',
-    entry: './entry.tsx',
-    devtool: "inline-source-map",
+    entry: './entry.ts',
+    devtool: 'inline-source-map',
     output: {
         path: __dirname,
         filename: 'bundle.js'
@@ -19,6 +19,8 @@ module.exports = {
         }]
     },
     plugins: [
-        new HtmlWebpackPlugin()
+        new HtmlWebpackPlugin({
+            template: 'index.html'
+        })
     ]
 }
