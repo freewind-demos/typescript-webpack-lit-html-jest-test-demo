@@ -1,3 +1,5 @@
 import * as $ from 'jquery'
 
-$('#main').text('Hello! (from index.ts)')
+const {default: hello} = require('./hello')
+
+$('#main').text(hello('webpack'))
