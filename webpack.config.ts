@@ -14,6 +14,12 @@ const config: Configuration = {
   },
   module: {
     rules: [{
+      test: /\.css$/,
+      use: [
+        {loader: 'style-loader'},
+        {loader: 'css-loader'}
+      ]
+    }, {
       test: /\.ts$/,
       loader: 'ts-loader',
       exclude: /node_modules/
@@ -22,7 +28,7 @@ const config: Configuration = {
   plugins: [
     new HtmlWebpackPlugin({
       template: 'index.html'
-    })
+    }) as any
   ]
 }
 
