@@ -4,7 +4,7 @@ import path from 'path';
 
 const config: Configuration = {
   mode: "development",
-  entry: './entry.ts',
+  entry: './src/entry.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -27,7 +27,7 @@ const config: Configuration = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'index.html'
+      template: './src/index.html'
     }) as any
   ]
 }
