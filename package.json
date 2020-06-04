@@ -1,23 +1,27 @@
 {
   "scripts": {
-    "demo": "webpack-dev-server --open"
+    "demo": "webpack-dev-server --open",
+    "test": "jest"
   },
   "dependencies": {
-    "jquery": "3.4.1",
     "lit-html": "1.2.1"
   },
   "devDependencies": {
-    "@types/html-webpack-plugin": "3.2.1",
-    "@types/jquery": "3.3.31",
-    "@types/webpack": "4.39.1",
-    "css-loader": "3.2.0",
-    "html-webpack-plugin": "3.2.0",
-    "style-loader": "1.0.0",
-    "ts-loader": "6.0.4",
-    "ts-node": "8.3.0",
-    "typescript": "3.6.2",
-    "webpack": "4.39.3",
-    "webpack-cli": "3.3.8",
-    "webpack-dev-server": "3.8.0"
+    "@babel/preset-env": "7.10.2",
+    "@types/html-webpack-plugin": "3.2.3",
+    "@types/jquery": "3.3.38",
+    "@types/webpack": "4.41.17",
+    "babel-jest": "26.0.1",
+    "css-loader": "3.5.3",
+    "html-webpack-plugin": "4.3.0",
+    "jest": "26.0.1",
+    "style-loader": "1.2.1",
+    "ts-jest": "26.1.0",
+    "ts-loader": "7.0.5",
+    "ts-node": "8.10.2",
+    "typescript": "3.9.3",
+    "webpack": "4.43.0",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "3.11.0"
   }
 }
