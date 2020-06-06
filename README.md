@@ -55,3 +55,7 @@ error Command failed with exit code 1.
 ```
 
 I tried all kinds of configurations I found, but can't fix it.
+
+Fixed by the help from @Teneff, thanks!
+
+https://stackoverflow.com/questions/62200568/syntaxerror-cannot-use-import-statement-outside-a-module-when-writing-test-wi/62216912#62216912
